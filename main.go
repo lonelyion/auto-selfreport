@@ -103,9 +103,9 @@ func sendMail(to, content string) (err error) {
 		return
 	}
 	inf := map[string]string{
-		"user": "dayreport@mzz.pub",
-		"pass": "GoodGoodStudyDayDayReport!",
-		"host": "smtp.mxhichina.com",
+		"user": "apikey",
+		"pass": "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",
+		"host": "smtp.sendgrid.net",
 		"port": "465",
 	}
 
@@ -190,7 +190,7 @@ func getViewParam() map[string]string {
 		log.Fatal("Please install tzdata first: " + err.Error())
 	}
 	Riqi := time.Now().In(loc).Format("2006-01-02")
-	Tiwen := fmt.Sprintf("%.1f", float64(362+rand.Int()%3)/10)
+	Tiwen := fmt.Sprintf("%.1f", float64(365+rand.Int()%5)/10)
 
 	F_State, area := generateFState(match, Riqi)
 
