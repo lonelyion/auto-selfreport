@@ -52,7 +52,8 @@ jobs:
           auto-selfreport_windows_386.exe
           auto-selfreport_windows_amd64.exe
       env:
-       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+       GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+       SG_TOKEN: ${{ secrets.SG_TOKEN }}
           
           
           

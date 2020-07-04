@@ -104,7 +104,7 @@ func sendMail(to, content string) (err error) {
 	}
 	inf := map[string]string{
 		"user": "apikey",
-		"pass": "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",
+		"pass": os.Getenv("SG_TOKEN"),
 		"host": "smtp.sendgrid.net",
 		"port": "465",
 	}
