@@ -18,4 +18,6 @@ jobs:
         chmod +x auto-self-report
         
     - name: Run job
+      env:
+        SG_TOKEN: ${{ secrets.SG_TOKEN }}
       run: ./auto-self-report -u ${{ secrets.SHU_USERNAME }} -p ${{ secrets.SHU_PASSWORD }} -e ${{ secrets.EMAIL }}
