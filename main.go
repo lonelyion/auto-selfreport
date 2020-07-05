@@ -103,10 +103,10 @@ func sendMail(to, content string) (err error) {
 		return
 	}
 	inf := map[string]string{
-		"user": "apikey",
+		"user": "copperion@outlook.com",
 		"pass": os.Getenv("SG_TOKEN"),
-		"host": "smtp.sendgrid.net",
-		"port": "465",
+		"host": "smtp.office365.com",
+		"port": "587",
 	}
 
 	port, _ := strconv.Atoi(inf["port"])
